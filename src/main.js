@@ -27,15 +27,20 @@ $(document).ready(function(){
 
     $("button#feedbtn").click(function() {
       pet.feed();
+      clearInterval(pet);
       displayStat(pet);
     });
 
     $("button#sleepbtn").click(function() {
       pet.sleep();
+      clearInterval(pet);
+      displayStat(pet);
     });
 
     $("button#playbtn").click(function() {
       pet.play();
+      clearInterval(pet);
+      displayStat(pet);
     });
   });
 });
